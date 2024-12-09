@@ -100,6 +100,7 @@
   background-color: #BABBC5;
   left: 0;
   bottom: 0;
+  transition: all 0.3s linear;
 }
 .header__nav-link:active {
   color: #E71414;
@@ -137,7 +138,7 @@
 /*banner*/
 .banner {
   background: url(../media/banner.png) center/cover no-repeat;
-  padding: 232px 0 120px;
+  padding: 123px 0 120px;
   position: relative;
   margin-bottom: 127px;
 }
@@ -149,7 +150,7 @@
 }
 @media (max-width: 767px) {
   .banner {
-    padding: 106px 0 52px;
+    padding: 88px 0 52px;
     margin-bottom: 48px;
   }
 }
@@ -513,8 +514,7 @@
 }
 @media (max-width: 767px) {
   .person__wrapper-img {
-    margin-bottom: -26px;
-    padding-top: 100%;
+    padding-top: 81%;
   }
 }
 .person__img {
@@ -525,11 +525,6 @@
   position: absolute;
   left: 0;
   top: 0;
-}
-@media (max-width: 767px) {
-  .person__img {
-    height: 81%;
-  }
 }
 .person__name {
   font-size: 24px;
@@ -603,18 +598,21 @@
   border: 1px solid #C6CBCD;
   align-items: center;
   justify-content: center;
+  transition: border-color 0.3s linear;
 }
 .person__wrapper-svg:hover {
   border-color: #FF4343;
 }
 .person__wrapper-svg:hover path {
   fill: #FF4343;
+  transition: all 0.3s linear;
 }
 .person__wrapper-svg:active {
   border-color: #B90C0C;
 }
 .person__wrapper-svg:active path {
   fill: #B90C0C;
+  transition: all 0.3s linear;
 }
 @media (max-width: 1024px) {
   .person__wrapper-svg {
@@ -630,16 +628,16 @@
 }
 
 .slider {
-  margin-bottom: 166px;
+  margin-bottom: 120px;
 }
 @media (max-width: 1024px) {
   .slider {
-    margin-bottom: 87px;
+    margin-bottom: 79px;
   }
 }
 @media (max-width: 767px) {
   .slider {
-    margin-bottom: 124px;
+    margin-bottom: 121px;
   }
 }
 .slider__container {
@@ -729,7 +727,7 @@
     font-family: "Cardo";
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 767px) {
   .slider__desk {
     text-align: center;
   }
@@ -759,6 +757,10 @@
   background-color: #7E5D6F;
 }
 
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0;
+}
+
 /*download*/
 .download {
   margin-bottom: 114px;
@@ -770,7 +772,7 @@
 }
 @media (max-width: 767px) {
   .download {
-    margin-bottom: 43px;
+    margin-bottom: 45px;
   }
 }
 .download .container {
@@ -805,7 +807,7 @@
     line-height: 21px;
     color: #000;
     font-family: "Raleway", sans-serif;
-    margin-bottom: 23px;
+    margin-bottom: 20px;
   }
 }
 .download__text-bottom {
@@ -832,7 +834,7 @@
     line-height: 15px;
     color: #000;
     font-family: "Raleway", sans-serif;
-    margin-bottom: 11px;
+    margin-bottom: 17px;
   }
 }
 .download__btn {
@@ -884,7 +886,7 @@
 }
 @media (max-width: 767px) {
   .footer__top {
-    padding: 34px 10px;
+    padding: 34px 0px;
   }
 }
 .footer .container__footer-top {
@@ -902,7 +904,6 @@
 }
 @media (max-width: 767px) {
   .footer .container__footer-top {
-    padding: 1px;
     grid-template-columns: 1fr;
     row-gap: 69px;
   }
@@ -976,18 +977,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s linear;
 }
 .footer__wrapper-svg:hover {
   border-color: #FF4343;
 }
 .footer__wrapper-svg:hover path {
   fill: #FF4343;
+  transition: all 0.3s linear;
 }
 .footer__wrapper-svg:active {
   border-color: #B90C0C;
 }
 .footer__wrapper-svg:active path {
   fill: #B90C0C;
+  transition: all 0.3s linear;
 }
 @media (max-width: 1024px) {
   .footer__wrapper-svg {
@@ -997,7 +1001,7 @@
 }
 .footer .container__footer-bottom {
   margin: 0 auto;
-  max-width: 100%;
+  max-width: 400px;
 }
 .footer__bottom {
   background-color: #2C3154;

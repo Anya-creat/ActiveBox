@@ -92,6 +92,7 @@ $font-color: #fff;
                 background-color: #BABBC5;
                 left: 0;
                 bottom: 0;
+                transition: all .3s linear;
             }
             &:active{
                 color: #E71414;
@@ -130,7 +131,7 @@ $font-color: #fff;
 /*banner*/
 .banner{
     background: url(../media/banner.png) center/cover no-repeat;
-    padding: 232px 0 120px;
+    padding: 123px 0 120px;
     position: relative;
     margin-bottom: 127px;
     @media (max-width:1024px){
@@ -138,7 +139,7 @@ $font-color: #fff;
         margin-bottom: 88px;
     }
     @media (max-width:767px){
-        padding: 106px 0 52px;
+        padding: 88px 0 52px;
         margin-bottom: 48px;
     }
     &::before{
@@ -397,8 +398,7 @@ $font-color: #fff;
             margin-bottom: 27px;
         }
         @media (max-width:767px){
-            margin-bottom: -26px;
-            padding-top: 100%;
+            padding-top: 81%;
         }
     }
     &__img{
@@ -408,9 +408,6 @@ $font-color: #fff;
         position: absolute;
         left: 0;
         top: 0;
-        @media (max-width:767px){
-            height: 81%;
-        }
     }
     &__name{
         @include font(24px, 28px,#2D3033, $font-text);
@@ -455,16 +452,19 @@ $font-color: #fff;
         border: 1px solid #C6CBCD;
         align-items: center;
         justify-content: center;
+        transition: border-color .3s linear;
         &:hover{
             border-color: #FF4343;
             path{
                 fill: #FF4343;
+                transition: all .3s linear;
             }
         }
         &:active{
             border-color: #B90C0C;
             path{
                 fill: #B90C0C;
+                transition: all .3s linear;
             }
         }
         @media (max-width:1024px){
@@ -481,12 +481,12 @@ $font-color: #fff;
 
 .slider{
 
-    margin-bottom: 166px;
+    margin-bottom: 120px;
     @media (max-width:1024px){
-        margin-bottom: 87px;
+        margin-bottom: 79px;
     }
     @media (max-width:767px){
-        margin-bottom: 124px;
+        margin-bottom: 121px;
     }
     &__container{
         display: grid;
@@ -549,7 +549,7 @@ $font-color: #fff;
         @media (max-width:1024px){
             @include font(12px, 14px,$font-color, "Cardo");
         }
-        @media (max-width:1024px){
+        @media (max-width:767px){
             text-align: center;
         }
     }
@@ -576,6 +576,9 @@ $font-color: #fff;
         background-color: #7E5D6F;
     }
 }
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+    margin: 0;
+}
 /*download*/
 .download{
     margin-bottom: 114px;
@@ -583,7 +586,7 @@ $font-color: #fff;
         margin-bottom: 78px;
     }
     @media (max-width:767px){
-        margin-bottom: 43px;
+        margin-bottom: 45px;
     }
     .container{
         text-align: center;
@@ -602,7 +605,7 @@ $font-color: #fff;
         }
         @media (max-width:767px){
             @include font(18px, 21px,#000, $font-text);
-            margin-bottom: 23px;
+            margin-bottom: 20px;
         }
     }
     &__text-bottom{
@@ -616,7 +619,7 @@ $font-color: #fff;
         }
         @media (max-width:767px){
             @include font(13px, 15px,#000, $font-text);
-            margin-bottom: 11px;
+            margin-bottom: 17px;
         }
     }
     &__btn{
@@ -655,7 +658,7 @@ $font-color: #fff;
             padding: 47px 0 41px;
         }
         @media (max-width:767px){
-            padding: 34px 10px;
+            padding: 34px 0px;
         }
     }
     .container__footer-top{
@@ -667,7 +670,6 @@ $font-color: #fff;
             column-gap: 20px;
         }
         @media (max-width:767px){
-            padding: 1px ;
             grid-template-columns: 1fr;
             row-gap: 69px;
         }
@@ -717,16 +719,19 @@ $font-color: #fff;
         display: flex;
         align-items: center;
         justify-content: center;
+        transition: all .3s linear;
         &:hover{
             border-color: #FF4343;
             path{
                 fill: #FF4343;
+                transition: all .3s linear;
             }
         }
         &:active{
             border-color: #B90C0C;
             path{
                 fill: #B90C0C;
+                transition: all .3s linear;
             }
         }
         @media (max-width:1024px){
@@ -736,7 +741,7 @@ $font-color: #fff;
     }
     .container__footer-bottom{
         margin: 0 auto;
-        max-width: 100%;
+        max-width: 400px;
     }
     &__bottom{
         background-color: #2C3154;
